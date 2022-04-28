@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UKM Ar-Rahman</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.png" rel="icon">
+  <link href="assets/img/fav.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ <style >
+     #hero {
+  width: 100%;
+  height: 100vh;
+  background: url(Ar-Rahman.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#header {
+  height: 90px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: rgba(52, 59, 64, 0.9);
+}
+#header #logo h1 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#header #logo h1 a, #header #logo h1 a:hover {
+  color: #fff;
+}
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+#header.header-transparent {
+ background: #C2D315;
+
+
+}
+#header.header-scrolled {
+background: #C2D315;
+
+  height: 70px;
+  transition: all 0.5s;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 14px;
+  padding: 0 4px;
+  white-space: nowrap;
+  transition: 0.3s;
+  letter-spacing: 0.4px;
+  position: relative;
+  text-transform: uppercase;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: black;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color:#fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(77, 77, 77, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile > ul > li {
+  padding: 0;
+}
+.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+  visibility: hidden;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #666666;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #2dc997;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #2dc997;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+#call-to-action {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  #call-to-action {
+    background-attachment: scroll;
+  }
+}
+#about1 {
+  
+  padding: 80px 0;
+}
+#about1 .about-container .background1 {
+   height: 500px;
+  background: url(panah.png)  #fff center top no-repeat;
+  margin-bottom: 10px;
+}
+#about1 .about-container .content {
+  background:  #fff;
+}
+#about1 .about-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+#about1 .about-container p {
+  line-height: 26px;
+}
+#about1 .about-container p:last-child {
+  margin-bottom: 0;
+}
+#about1 .about-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#about1 .about-container .icon-box .icon4 {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  background:url(roket.png) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #C2D315;
+ }
+ #about1 .about-container .icon-box:hover .icon4 { 
+  background:url(roketa.png) center #fff;
+  border: 2px solid #C2D315;
+ }
+  #about1 .about-container .icon-box:hover .icon5 { 
+  background:url(teroponga.png) center #fff;
+  border: 2px solid #C2D315;
+ }
+ #about1 .about-container .icon-box .icon5 {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  background:url(teropong.png) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #C2D315;
+ }
+#about1 .about-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#about1 .about-container .icon-box .title a {
+  color: #111;
+}
+#about1 .about-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#about .about-container .content {
+  background:  #fafafa;
+}
+#about {
+   background:  #fafafa;
+  background-size: cover;
+  padding: 80px 0;
+}
+#about .about-container .icon-box {
+  background:  #fafafa;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+#about .about-container .background {
+  min-height: 300px;
+  background: url(panjang.jpg) #fafafa center top no-repeat;
+  margin-bottom: 10px;
+}
+#about .about-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  background:url(Kubah.png) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+border-radius: 50%;
+  border: 2px solid #C2D315;
+ }
+ #about .about-container .icon-box .icon1 {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  background:url(Kufi.png) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+border-radius: 50%;
+  border: 2px solid #C2D315;
+ }
+ #about .about-container .icon-box .icon2 {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  background:url(Ar-Rahman_1.png) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+border-radius: 50%;
+  border: 2px solid #C2D315;
+ }
+ #about .about-container .icon-box .icon3 {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  background:url(Warna.png) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #C2D315;
+ }
+@media (max-width: 768px) {
+  #about .about-container .title {
+    padding-top: 15px;
+  }
+  #about .about-container .background {
+  height: 500px;
+  background: url(panjang.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+ #about1 .about-container .background1 {
+  height: 500px;
+  background: url(panah.png) center top no-repeat;
+  margin-bottom: 10px;
+}
+}
+
+ #services .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+   background:url(toaa.png) center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+
+}
+ #services .icon1 {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+   background:url(otaka.png) center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+
+}
+ #services .icon2 {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+   background:url(awana.png) center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+
+}
+ #services .box:hover .icon {
+  background:url(toa.png) center #fff;
+  border: 2px solid #C2D315;
+}
+ #services .box:hover .icon1 {
+  background:url(otak.png) center #fff;
+  border: 2px solid #C2D315;
+}
+ #services .box:hover .icon2 {
+  background:url(awan.png) center #fff;
+  border: 2px solid #C2D315;
+}
+#team {
+  background: #fafafa;
+  padding: 80px 0 60px 0;
+}
+#team1 {
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+#team1 .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team1 .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+#team1 .member .pic img {
+  max-width: 100%;
+}
+#team1 .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+#team1 .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+#team1 .member .social {
+  margin-top: 15px;
+}
+#team1 .member .social a {
+  color: #b3b3b3;
+}
+#team1 .member .social a:hover {
+  color: #2dc997;
+}
+#team1 .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+ </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <a href="index.html"><img src="assets/img/Logo1.png" style="width: 200px; height: 55px;"  alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#call-to-action">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#about">Logo</a></li>
+          <li><a class="nav-link scrollto" href="#facts">Anggota</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Hubungi Kami</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>أَهْلًا وَسَهْلً  </h1>
+      <h1>Selamat Datang di Page Ar-Rahman</h1>
+      <h2>Politeknik LP3I Bandung</h2>
+      <a href="#about" class="btn-get-started">Selengkapnya</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about1">
+      <div class="container" data-aos="fade-up">
+         <div class="section-header">
+          <h3 class="section-title">Visi & Misi</h3>
+      </div>    
+          <div class="row about-container">
+          <div class="col-lg-6 background1 order-lg-1 order-1" data-aos="fade-left" data-aos-delay="100"> </div>
+          <div class="col-lg-6 content order-lg-2 order-2">
+            <br><br>
+            <p>
+            memilki alasan yang kuat dan serangkaian hal yang adakan dilakukan dalam dibentuknya suatu organisasi adalah hal yang sangat penting, oleh karna itu UKM Ar-Rahman hadir
+            </p>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon4"></div>
+              <h4 class="title">Visi</h4>
+              <p class="description">Menjadi Uni Kegiatan Mahasiswa yang mampu mengimplementasikan keagamaan dan keilmuan untuk menghasilkan insan yang Beriman , Bertakwa dan Profesional.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon5"></div>
+              <h4 class="title"><a href="">Misi</a></h4>
+              <p class="description">&#8226; Menyelanggarakan aktifitas keagamaan.<br>
+              &#8226; Menyelanggarakan pendidikan berbasis ilmu, amal dan teknologi.<br>
+              &#8226; Menciptakan sistem keorganisasian berbasis syariah dan keilmuan.<br>
+              &#8226; Menjalin kemitraan dan kerjasama dengan unit, lembaga dan usaha/industri.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+ <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Filosofi Logo</h2>
+            <p>
+             Logo merupakan salah satu aspek penting dalam suatu organisasi, untuk mewakili visi & misi yang dimiliki.
+             Berikut merupakan filosofi pada Logo UKM Ar-Rahman : 
+            </p>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"></div>
+              <h4 class="title">Bentuk Kubah</h4>
+              <p class="description">Kubah merupakan elemen yang dapat menghadirkan ruang positif yang besar pada suatu bangunan khususnya masjid
+              yang menjadi tempat ibadah umat muslim.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon1"></div>
+              <h4 class="title"><a href="">Kaligrafi Ar-Rahman</a></h4>
+              <p class="description">Kaligrafi jenis kufi merupakan kaligrafi tertua dari berbagai aksara arab, dan terus populer hingga saat ini.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon2"></div>
+              <h4 class="title"><a href="">Kalimat Ar-Rahman</a></h4>
+              <p class="description">Mengartikan dalam Al-Qur'an yaitu Maha Pengasih dan merupakan nama masjid di Politeknik LP3I Bandung
+              dan UKM itu sendiri.</p>
+            </div>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon3"></div>
+              <h4 class="title"><a href="">Warna</a></h4>
+              <p class="description">Hijau Kekuningan merujuk pada Kesuburan, Berkelimpahan, dan Keceriaan.Dan dalam agama islam,
+              hijau merupakan warna suci yang banyak mewakili simbol - simbol islam.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+ <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Tentang</h3>
+            <h5 class="cta-text"><b><strong>Ar-Rahman</strong></b> Merupakan Unit Kegiatan Mahasiswa yang berupaya 
+            <b>mendukung dan membantu </b>Kampus Utama <b>Politeknik LP3I Bandung</b> dalam melaksanakan <b>hal - hal terkait keagamaan</b>.
+            </h5>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+      <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Impian Ar-Rahman</h3>
+          <p class="section-description">Segala usaha diusahakan oleh UKM Ar-Rahman untuk yang terbaik, guna menciptakan</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon2"></div>
+              <h4 class="title"><a href="">Suasana Religius</a></h4>
+              <p class="description">keadaan dalam lingkungan kampus yang religius tentunya berpengaruh besar pada suasana yang penuh akan ketenangan pada setiap insan yang saling berhubungan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"></div>
+              <h4 class="title"><a href="">Aktifis Dakwah</a></h4>
+              <p class="description">Dakwah merupakan kewajiban setiap seorang muslim, menyeru dan mengajak agar senantiasa beriman dan taat kepada allah</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon1"></div>
+              <h4 class="title"><a href="">Mendekatkan dunia Keilmuan dan Keislaman</a></h4>
+              <p class="description">Bergerak sebagai salah satu elemen dakwah, agar bisa saling berdampingan tanpa melupakan salah satunya</p>
+            </div>
+          </div>
+
+        
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Facts Section ======= -->
+    <section id="facts">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Jumlah Anggota</h3>
+            <p class="section-description">Berikut merupakan jumlah anggota UKM Ar-Rahman </p>
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Anggota Angkatan 2020</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="29" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Anggota Angkatan 2021</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="52" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Jumlah Seluruh Anggota</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Jumlah Pengurus</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+   
+  
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Kegiatan</h3>
+          <p class="section-description">Berikut adalah beberapa kegiatan UKM Ar-Rahman</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Program Unggulan</li>
+              <li data-filter=".filter-card">Kumpulan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/foto1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/foto1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/foto2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/foto2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/foto3.png"  class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/foto3.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/foto4.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/foto4.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/foto5.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/foto5.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/foto6.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/foto6.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/foto7.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/foto7.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/foto8.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/foto8.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/foto9.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/foto9.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team1">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Sholawat</h3>
+        <p class="section-description">Berikut adalah Sholawat yang dipersembahkan oleh UKM Ar-Rahman</p>
+        </div>
+          <video controls width="100%">
+              <source src="Video.mp4" type="video/mp4">
+          </video>
+      </div>
+    
+    </section><!-- End Team Section -->
+<section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Struktur Kepengurusan</h3>
+        </div>
+         
+      
+<center>
+    <br>
+ <a href="assets/img/portfolio/foto10.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link icon"> <img src="assets/img/portfolio/foto10.png" style="width: 100%;" alt=""></a>
+         </center>  
+        
+        </div>
+    </section>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Hubungi Kami</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+        <div class="row justify-content-center">
+
+          <div class="col-lg-6 col-md-4">
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.94875615713!2d107.63172021467851!3d-6.896732869407658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7baae81c353%3A0x8e5c17cad77c439d!2sPoliteknik%20LP3I%20Bandung!5e0!3m2!1sid!2sid!4v1642921692674!5m2!1sid!2sid" width="100%" height="380" frameborder="yes" style="float: right;" ></iframe>
+  </div>
+
+ <div class="col-lg-6 col-md-4">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+
+        
+            <div class="info">
+              <div>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <p>ukm_arrahmanplb</p>
+              </div>
+
+              <div>
+                <a href="#" class="instagram"><i class="bi bi-google"></i></a>
+                <p>rohis@plb.ac.id</p>
+              </div>
+
+              <div>
+                 <a href="#" class="linkedin"><i class="bi bi-whatsapp"></i></a>
+                 <p>0838-2519-6131</p>
+              </div>
+            </div>
+
+
+        
+        </div>
+    </div>
+      </div>
+  </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>HIMAMI Team Programming</strong>
+      </div>
+      <div class="credits">     
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
